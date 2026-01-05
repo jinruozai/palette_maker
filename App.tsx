@@ -1,5 +1,5 @@
 import React, { useState, useRef, useMemo, useEffect } from 'react';
-import { Download, Upload, Plus, RefreshCw, Grid as GridIcon, Square, ArrowRight, ArrowDown, Trash2, ChevronRight, ChevronDown, ChevronsUpDown, Settings, Eye, EyeOff, X, Wand2, PaintBucket, ChartBar, Github } from 'lucide-react';
+import { Download, Upload, Plus, RefreshCw, Grid as GridIcon, Square, ArrowRight, ArrowDown, Trash2, ChevronRight, ChevronDown, ChevronsUpDown, Settings, Eye, EyeOff, X, Wand2, PaintBucket, BarChart, Github } from 'lucide-react';
 import GridCanvas, { GridCanvasHandle } from './components/GridCanvas';
 import GradientEditor from './components/GradientEditor';
 import ColorPicker from './components/ColorPicker';
