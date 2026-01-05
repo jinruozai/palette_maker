@@ -137,7 +137,6 @@ const App: React.FC = () => {
   const colorPickerContainerRef = useRef<HTMLDivElement>(null);
 
   // Editor State
-  // Mode tracks the actual type being used (solid or one of the linear types)
   const [mode, setMode] = useState<GradientType>('solid'); 
   const [activeSolidColor, setActiveSolidColor] = useState('#3b82f6');
   const [activeStops, setActiveStops] = useState<ColorStop[]>(DEFAULT_STOPS);
@@ -482,7 +481,7 @@ const App: React.FC = () => {
                        : 'text-gray-400 hover:text-gray-200'
                    }`}
                  >
-                   <ChartBar size={14} className="rotate-90" />
+                   <BarChart size={14} className="rotate-90" />
                    Gradient
                  </button>
                </div>
