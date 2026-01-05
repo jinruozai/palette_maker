@@ -1,0 +1,103 @@
+key,en,zh,es,fr,de,ja,ko,ru,pt
+app_title,Palette,色卡,Paleta,Palette,Palette,パレット,팔레트,Палитра,Paleta
+app_title_suffix,Maker,大师,Maker,Créateur,Macher,メーカー,메이커,Мастер,Criador
+edit_mode,Hide Grid,隐藏网格,Ocultar Cuadrícula,Masquer la Grille,Raster Ausblenden,グリッドを隠す,그리드 숨기기,Скрыть Сетку,Ocultar Grade
+preview_mode,Show Grid,显示网格,Mostrar Cuadrícula,Afficher la Grille,Raster Anzeigen,グリッドを表示,그리드 표시,Показать Сетку,Mostrar Grade
+hide_grid,Hide Grid Lines,隐藏网格线,Ocultar Líneas de Cuadrícula,Masquer les Lignes,Rasterlinien Ausblenden,グリッド線を隠す,그리드 선 숨기기,Скрыть Линии Сетки,Ocultar Linhas de Grade
+show_grid,Show Grid Lines,显示网格线,Mostrar Líneas de Cuadrícula,Afficher les Lignes,Rasterlinien Anzeigen,グリッド線を表示,그리드 선 표시,Показать Линии Сетки,Mostrar Linhas de Grade
+grid_settings,Grid Settings,网格设置,Configuración de Cuadrícula,Paramètres de Grille,Rastereinstellungen,グリッド設定,그리드 설정,Настройки Сетки,Configurações de Grade
+clear_grid,Clear Grid,清空网格,Limpiar Cuadrícula,Effacer la Grille,Raster Löschen,グリッドをクリア,그리드 지우기,Очистить Сетку,Limpar Grade
+view_source,View Source on GitHub,查看源码,Ver Código en GitHub,Voir Source sur GitHub,Quellcode auf GitHub Ansehen,GitHubでソースを見る,GitHub에서 소스 보기,Посмотреть код на GitHub,Ver Fonte no GitHub
+texture_width,Texture Width (px),纹理宽度 (px),Ancho de Textura (px),Largeur de Texture (px),Texturbreite (px),テクスチャ幅 (px),텍스처 너비 (px),Ширина Текстуры (px),Largura da Textura (px)
+texture_height,Texture Height (px),纹理高度 (px),Alto de Textura (px),Hauteur de Texture (px),Texturhöhe (px),テクスチャ高さ (px),텍스처 높이 (px),Высота Текстуры (px),Altura da Textura (px)
+grid_cell_size,Grid Cell Size (px),网格大小 (px),Tamaño de Celda (px),Taille de Cellule (px),Rasterzellengröße (px),グリッドセルサイズ (px),그리드 셀 크기 (px),Размер Ячейки (px),Tamanho da Célula (px)
+cancel,Cancel,取消,Cancelar,Annuler,Abbrechen,キャンセル,취소,Отмена,Cancelar
+confirm,Confirm,确认,Confirmar,Confirmer,Bestätigen,確認,확인,Подтвердить,Confirmar
+fill_mode,Fill Mode,填充模式,Modo de Relleno,Mode de Remplissage,Füllmodus,塗りつぶしモード,채우기 모드,Режим Заливки,Modo de Preenchimento
+solid,Solid,纯色,Sólido,Solide,Vollton,単色,단색,Сплошной,Sólido
+h_gradient,H-Grad,水平渐变,Grad-H,Grad-H,H-Verlauf,水平グラデ,수평 그라데이션,Гор. Град.,Grad-H
+v_gradient,V-Grad,垂直渐变,Grad-V,Grad-V,V-Verlauf,垂直グラデ,수직 그라데이션,Верт. Град.,Grad-V
+gradient,Gradient,渐变,Degradado,Dégradé,Verlauf,グラデーション,그라데이션,Градиент,Degradê
+hex_code,Hex Code,色值,Código Hex,Code Hex,Hex-Code,Hexコード,Hex 코드,Hex Код,Código Hex
+pick_color,Pick Color,选择颜色,Elegir Color,Choisir Couleur,Farbe Wahlen,色を選択,색상 선택,Выбрать Цвет,Escolher Cor
+drag_to_select,Drag to select,拖动选择,Arrastrar para seleccionar,Glisser pour sélectionner,Ziehen zum Auswählen,ドラッグして選択,드래그하여 선택,Перетащите для выбора,Arraste para selecionar
+suggest_gradients,"Suggest Gradients (Harmonies, Tints, etc.)","渐变建议 (配色、色调等)","Sugerir Degradados","Suggérer Dégradés","Verläufe Vorschlagen","グラデーション提案","그라데이션 제안","Предложить Градиенты","Sugerir Degradês"
+add_to_palette,Add to Palette,添加到色板,Añadir a Paleta,Ajouter à la Palette,Zur Palette Hinzufügen,パレットに追加,팔레트에 추가,Добавить в Палитру,Adicionar à Paleta
+apply_to_selection,Apply to Selection,应用到选区,Aplicar a Selección,Appliquer à la Sélection,Auf Auswahl Anwenden,選択範囲に適用,선택 영역에 적용,Применить к Выделенному,Aplicar à Seleção
+palette_library,Palette Library,色板库,Biblioteca de Paletas,Bibliothèque de Palettes,Palettenbibliothek,パレットライブラリ,팔레트 라이브러리,Библиотека Палитр,Biblioteca de Paletas
+toggle_all,Toggle All,切换全部,Alternar Todo,Tout Basculer,Alle Umschalten,すべて切り替え,전체 토글,Переключить Все,Alternar Tudo
+my_palette,My Palette,我的色板,Mi Paleta,Ma Palette,Meine Palette,マイパレット,나의 팔레트,Моя Палитра,Minha Paleta
+no_custom_colors,No custom colors yet,暂无自定义颜色,Sin colores personalizados,Pas de couleurs personnalisées,Keine benutzerdefinierten Farben,カスタムカラーなし,사용자 정의 색상 없음,Нет пользовательских цветов,Sem cores personalizadas
+cat_basic_solids,Basic Solids,基础纯色,Sólidos Básicos,Solides de Base,Grundfarben,基本単色,기본 단색,Основные Сплошные,Sólidos Básicos
+cat_basics,Basics & Metals,基础 & 金属,Básicos y Metales,Basiques et Métaux,Grundlagen & Metalle,基本と金属,기본 & 금속,Основы и Металлы,Básicos & Metais
+cat_warm,Warm & Sunset,暖色 & 日落,Cálido y Atardecer,Chaud et Coucher de Soleil,Warm & Sonnenuntergang,暖色と夕日,따뜻함 & 노을,Теплые и Закат,Quente & Pôr do Sol
+cat_cool,Cool & Blues,冷色 & 蓝调,Frío y Azules,Frais et Bleus,Kühl & Blautöne,寒色と青,시원함 & 파랑,Холодные и Синие,Frio & Azuis
+cat_nature,Nature & Earth,自然 & 大地,Naturaleza y Tierra,Nature et Terre,Natur & Erde,自然と大地,자연 & 대지,Природа и Земля,Natureza & Terra
+cat_vibrant,Vibrant & Neon,鲜艳 & 霓虹,Vibrante y Neón,Vibrant et Néon,Lebhaft & Neon,鮮やかとネオン,활기참 & 네온,Яркие и Неон,Vibrante & Neon
+cat_pastel,Pastels,粉彩 & 柔和,Pasteles,Pastels,Pastelltöne,パステル,파스텔,Пастельные,Tons Pastéis
+import,Import,导入,Importar,Importer,Importieren,インポート,가져오기,Импорт,Importar
+export,Export,导出,Exportar,Exporter,Exportieren,エクスポート,내보내기,Экспорт,Exportar
+gradient_ideas,Gradient Ideas,渐变灵感,Ideas de Degradado,Idées de Dégradé,Verlaufsideen,グラデーションのアイデア,그라데이션 아이디어,Идеи Градиентов,Ideias de Degradê
+apply_gradient,Apply Gradient,应用渐变,Aplicar Degradado,Appliquer le Dégradé,Verlauf Anwenden,グラデーションを適用,그라데이션 적용,Применить Градиент,Aplicar Degradê
+cat_tints_shades,Tints & Shades,色调 & 阴影,Tintes y Sombras,Teintes et Nuances,Tönungen & Schattierungen,色合いと影,색조 & 음영,Оттенки и Тени,Matizes & Sombras
+cat_luminosity,Luminosity,亮度变化,Luminosidad,Luminosité,Leuchtkraft,明るさ,광도,Яркость,Luminosidade
+cat_harmonies,Harmonies,色彩和谐,Armonías,Harmonies,Harmonien,ハーモニー,조화,Гармонии,Harmonias
+sug_fade_to_white,Fade to White,渐变至白,Desvanecer a Blanco,Fondu vers Blanc,Verblassen zu Weiß,白へフェード,흰색으로 페이드,Угасание к Белому,Desvanecer para Branco
+sug_fade_from_white,Fade from White,从白渐变,Desvanecer desde Blanco,Fondu depuis Blanc,Verblassen von Weiß,白からフェード,흰색에서 페이드,Угасание от Белого,Desvanecer do Branco
+sug_fade_to_black,Fade to Black,渐变至黑,Desvanecer a Negro,Fondu vers Noir,Verblassen zu Schwarz,黒へフェード,검은색으로 페이드,Угасание к Черному,Desvanecer para Preto
+sug_fade_from_black,Fade from Black,从黑渐变,Desvanecer desde Negro,Fondu depuis Noir,Verblassen von Schwarz,黒からフェード,검은색에서 페이드,Угасание от Черного,Desvanecer do Preto
+sug_to_lighter,To Lighter,变亮,Más Claro,Plus Clair,Heller,より明るく,더 밝게,Светлее,Mais Claro
+sug_to_darker,To Darker,变暗,Más Oscuro,Plus Sombre,Dunkler,より暗く,더 어둡게,Темнее,Mais Escuro
+sug_analogous_warm,Analogous (Warm),类似色 (暖),Análogo (Cálido),Analogue (Chaud),Analog (Warm),類似色 (暖),유사색 (따뜻함),Аналогичные (Теплые),Análogo (Quente)
+sug_analogous_cool,Analogous (Cool),类似色 (冷),Análogo (Frío),Analogue (Frais),Analog (Kühl),類似色 (冷),유사색 (시원함),Аналогичные (Холодные),Análogo (Frio)
+sug_complementary,Complementary,互补色,Complementario,Complémentaire,Komplementär,補色,보색,Комплементарные,Complementar
+sug_split_comp_1,Split Comp. 1,分裂互补 1,División Comp. 1,Split Comp. 1,Geteilt Komp. 1,分裂補色 1,분할 보색 1,Раздельно-Компл. 1,Comp. Dividida 1
+sug_split_comp_2,Split Comp. 2,分裂互补 2,División Comp. 2,Split Comp. 2,Geteilt Komp. 2,分裂補色 2,분할 보색 2,Раздельно-Компл. 2,Comp. Dividida 2
+sug_triadic,Triadic,三色系,Triádico,Triadique,Triadisch,三色配色,삼색,Триадические,Triádico
+sug_tetradic,Tetradic,四色系,Tetrádico,Tétradique,Tetradisch,四色配色,사색,Тетрадические,Tetrádico
+p_black_white,Black & White,黑白,Blanco y Negro,Noir et Blanc,Schwarz & Weiß,黒と白,흑백,Черное и Белое,Preto & Branco
+p_soft_gray,Soft Gray,柔和灰,Gris Suave,Gris Doux,Weiches Grau,ソフトグレー,부드러운 회색,Мягкий Серый,Cinza Suave
+p_silver,Silver,银色,Plata,Argent,Silber,銀色,은색,Серебро,Prata
+p_gold_standard,Gold Standard,标准金,Estándar Oro,Or Standard,Goldstandard,ゴールド,골드 스탠다드,Золотой Стандарт,Ouro Padrão
+p_rose_gold,Rose Gold,玫瑰金,Oro Rosa,Or Rose,Roségold,ローズゴールド,로즈 골드,Розовое Золото,Ouro Rosa
+p_bronze,Bronze,青铜,Bronce,Bronze,Bronze,ブロンズ,청동,Бронза,Bronze
+p_chrome,Chrome,铬色,Cromo,Chrome,Chrom,クロム,크롬,Хром,Cromo
+p_dark_metal,Dark Metal,暗金属,Metal Oscuro,Métal Sombre,Dunkles Metall,ダークメタル,다크 메탈,Темный Металл,Metal Escuro
+p_sunset,Sunset,日落,Atardecer,Coucher de Soleil,Sonnenuntergang,日没,일몰,Закат,Pôr do Sol
+p_dawn,Dawn,黎明,Amanecer,Aube,Morgendämmerung,夜明け,새벽,Рассвет,Amanhecer
+p_heatwave,Heatwave,热浪,Ola de Calor,Vague de Chaleur,Hitzewelle,熱波,폭염,Тепловая Волна,Onda de Calor
+p_cherry,Cherry,樱桃,Cereza,Cerise,Kirsche,チェリー,체리,Вишня,Cereja
+p_burning_orange,Burning Orange,燃烧橙,Naranja Ardiente,Orange Brûlant,Brennendes Orange,バーニングオレンジ,불타는 오렌지,Горящий Оранжевый,Laranja Ardente
+p_peach,Peach,桃色,Melocotón,Pêche,Pfirsich,ピーチ,복숭아,Персик,Pêssego
+p_autumn,Autumn,秋天,Otoño,Automne,Herbst,秋,가을,Осень,Outono
+p_red_mist,Red Mist,红雾,Niebla Roja,Brume Rouge,Roter Nebel,赤い霧,붉은 안개,Красный Туман,Névoa Vermelha
+p_desert,Desert,沙漠,Desierto,Désert,Wüste,砂漠,사막,Пустыня,Deserto
+p_ocean,Ocean,海洋,Océano,Océan,Ozean,海,바다,Океан,Oceano
+p_sky,Sky,天空,Cielo,Ciel,Himmel,空,하늘,Небо,Céu
+p_cool_blues,Cool Blues,冷蓝,Azules Fríos,Bleus Frais,Kühle Blautöne,クールブルー,시원한 파랑,Холодные Синие,Azuis Frios
+p_deep_sea,Deep Sea,深海,Mar Profundo,Mer Profonde,Tiefsee,深海,심해,Глубокое Море,Mar Profundo
+p_aqua,Aqua,水色,Agua,Aqua,Aqua,アクア,아쿠아,Аква,Aqua
+p_night,Night,夜晚,Noche,Nuit,Nacht,夜,밤,Ночь,Noite
+p_ice,Ice,冰,Hielo,Glace,Eis,氷,얼음,Лед,Gelo
+p_frozen,Frozen,冰冻,Congelado,Gelé,Gefroren,フローズン,겨울왕국,Замороженный,Congelado
+p_forest,Forest,森林,Bosque,Forêt,Wald,森,숲,Лес,Floresta
+p_lush,Lush,葱郁,Exuberante,Luxuriant,Üppig,青々とした,무성한,Пышный,Exuberante
+p_grass,Grass,草地,Hierba,Herbe,Gras,草,잔디,Трава,Grama
+p_earth,Earth,大地,Tierra,Terre,Erde,地球,대지,Земля,Terra
+p_sand,Sand,沙子,Arena,Sable,Sand,砂,모래,Песок,Areia
+p_moss,Moss,苔藓,Musgo,Mousse,Moos,苔,이끼,Мох,Musgo
+p_leaf,Leaf,叶子,Hoja,Feuille,Blatt,葉,잎,Лист,Folha
+p_neon,Neon,霓虹,Neón,Néon,Neon,ネオン,네온,Неон,Neon
+p_synthwave,Synthwave,合成波,Synthwave,Synthwave,Synthwave,シンセウェーブ,신스웨이브,Синтвейв,Synthwave
+p_cyberpunk,Cyberpunk,赛博朋克,Cyberpunk,Cyberpunk,Cyberpunk,サイバーパンク,사이버펑크,Киберпанк,Cyberpunk
+p_rainbow,Rainbow,彩虹,Arcoiris,Arc-en-ciel,Regenbogen,虹,무지개,Радуга,Arco-íris
+p_ultraviolet,Ultraviolet,紫外线,Ultravioleta,Ultraviolet,Ultraviolett,紫外線,자외선,Ультрафиолет,Ultravioleta
+p_disco,Disco,迪斯科,Disco,Disco,Disco,ディスコ,디스코,Диско,Disco
+p_plasma,Plasma,等离子,Plasma,Plasma,Plasma,プラズマ,플라즈마,Плазма,Plasma
+p_electric_violet,Electric Violet,电光紫,Violeta Eléctrico,Violet Électrique,Elektrisches Violett,エレクトリックバイオレット,일렉트릭 바이올렛,Электрический Фиолетовый,Violeta Elétrico
+p_candy,Candy,糖果,Caramelo,Bonbon,Süßigkeiten,キャンディ,캔디,Конфета,Doce
+p_cotton_candy,Cotton Candy,棉花糖,Algodón de Azúcar,Barbe à Papa,Zuckerwatte,綿菓子,솜사탕,Сахарная Вата,Algodão Doce
+p_cloud,Cloud,云朵,Nube,Nuage,Wolke,雲,구름,Облако,Nuvem
+p_blush,Blush,腮红,Rubor,Rougir,Erröten,赤面,블러시,Румянец,Blush
+p_cream,Cream,奶油,Crema,Crème,Creme,クリーム,크림,Крем,Creme
+p_lavender,Lavender,薰衣草,Lavanda,Lavande,Lavendel,ラベンダー,라벤더,Лаванда,Lavanda

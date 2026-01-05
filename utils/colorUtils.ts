@@ -150,23 +150,23 @@ export const generateGradientSuggestions = (baseHex: string): GradientSuggestion
 
   // 1. Tints & Shades
   suggestions.push({
-    name: 'Fade to White',
-    category: 'Tints & Shades',
+    name: 'sug_fade_to_white',
+    category: 'cat_tints_shades',
     stops: createStops(baseHex, '#ffffff')
   });
   suggestions.push({
-    name: 'Fade from White',
-    category: 'Tints & Shades',
+    name: 'sug_fade_from_white',
+    category: 'cat_tints_shades',
     stops: createStops('#ffffff', baseHex)
   });
   suggestions.push({
-    name: 'Fade to Black',
-    category: 'Tints & Shades',
+    name: 'sug_fade_to_black',
+    category: 'cat_tints_shades',
     stops: createStops(baseHex, '#000000')
   });
   suggestions.push({
-    name: 'Fade from Black',
-    category: 'Tints & Shades',
+    name: 'sug_fade_from_black',
+    category: 'cat_tints_shades',
     stops: createStops('#000000', baseHex)
   });
 
@@ -175,13 +175,13 @@ export const generateGradientSuggestions = (baseHex: string): GradientSuggestion
   const darker = hslToHex(hsl.h, hsl.s, Math.max(5, hsl.l - 30));
   
   suggestions.push({
-    name: 'To Lighter',
-    category: 'Luminosity',
+    name: 'sug_to_lighter',
+    category: 'cat_luminosity',
     stops: createStops(baseHex, lighter)
   });
   suggestions.push({
-    name: 'To Darker',
-    category: 'Luminosity',
+    name: 'sug_to_darker',
+    category: 'cat_luminosity',
     stops: createStops(baseHex, darker)
   });
 
@@ -192,21 +192,21 @@ export const generateGradientSuggestions = (baseHex: string): GradientSuggestion
   const ana2 = hslToHex((hsl.h - 30 + 360) % 360, hsl.s, hsl.l);
   
   suggestions.push({
-    name: 'Analogous (Warm)',
-    category: 'Harmonies',
+    name: 'sug_analogous_warm',
+    category: 'cat_harmonies',
     stops: createStops(baseHex, ana1)
   });
   suggestions.push({
-    name: 'Analogous (Cool)',
-    category: 'Harmonies',
+    name: 'sug_analogous_cool',
+    category: 'cat_harmonies',
     stops: createStops(baseHex, ana2)
   });
 
   // Complementary (180 degrees)
   const comp = hslToHex((hsl.h + 180) % 360, hsl.s, hsl.l);
   suggestions.push({
-    name: 'Complementary',
-    category: 'Harmonies',
+    name: 'sug_complementary',
+    category: 'cat_harmonies',
     stops: createStops(baseHex, comp)
   });
 
@@ -215,13 +215,13 @@ export const generateGradientSuggestions = (baseHex: string): GradientSuggestion
   const split2 = hslToHex((hsl.h + 210) % 360, hsl.s, hsl.l);
 
   suggestions.push({
-    name: 'Split Comp. 1',
-    category: 'Harmonies',
+    name: 'sug_split_comp_1',
+    category: 'cat_harmonies',
     stops: createStops(baseHex, split1)
   });
   suggestions.push({
-    name: 'Split Comp. 2',
-    category: 'Harmonies',
+    name: 'sug_split_comp_2',
+    category: 'cat_harmonies',
     stops: createStops(baseHex, split2)
   });
   
@@ -229,8 +229,8 @@ export const generateGradientSuggestions = (baseHex: string): GradientSuggestion
   const tri1 = hslToHex((hsl.h + 120) % 360, hsl.s, hsl.l);
   
   suggestions.push({
-    name: 'Triadic',
-    category: 'Harmonies',
+    name: 'sug_triadic',
+    category: 'cat_harmonies',
     stops: createStops(baseHex, tri1)
   });
 

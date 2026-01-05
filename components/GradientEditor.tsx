@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { ColorStop, GradientType } from '../types';
 import { generateUUID } from '../utils/colorUtils';
-import { Trash2, ArrowRight, ArrowDown } from 'lucide-react';
+import { Trash2, ArrowRight, ArrowDown, RotateCw } from 'lucide-react';
 
 interface GradientEditorProps {
   stops: ColorStop[];
@@ -51,6 +51,10 @@ const GradientEditor: React.FC<GradientEditorProps> = ({ stops, onChange, gradie
     }
   };
 
+  const toggleDirection = () => {
+    onTypeChange(gradientType === 'linear-horizontal' ? 'linear-vertical' : 'linear-horizontal');
+  };
+
   const getGradientCss = () => {
     const sorted = [...stops].sort((a, b) => a.offset - b.offset);
     const cssString = sorted.map((s) => `${s.color} ${s.offset * 100}%`).join(', ');
@@ -88,30 +92,8 @@ const GradientEditor: React.FC<GradientEditorProps> = ({ stops, onChange, gradie
   const selectedStop = stops.find((s) => s.id === selectedStopId);
 
   return (
-    <div className="flex flex-col gap-4 p-2 bg-gray-800 rounded-lg select-none relative border border-gray-700">
+    <div className="flex flex-col gap-3 select-none relative pt-2">
       
-      <div className="flex justify-between items-center mb-1">
-        <span className="text-xs text-gray-400 font-medium uppercase tracking-wide">Gradient Editor</span>
-        
-        {/* Direction Toggle */}
-        <div className="flex bg-gray-900 rounded border border-gray-700 p-0.5">
-          <button 
-            onClick={() => onTypeChange('linear-horizontal')}
-            className={`p-1 rounded transition-colors ${gradientType === 'linear-horizontal' ? 'bg-gray-700 text-white shadow-sm' : 'text-gray-500 hover:text-gray-300'}`}
-            title="Horizontal Gradient"
-          >
-            <ArrowRight size={14} />
-          </button>
-          <button 
-             onClick={() => onTypeChange('linear-vertical')}
-             className={`p-1 rounded transition-colors ${gradientType === 'linear-vertical' ? 'bg-gray-700 text-white shadow-sm' : 'text-gray-500 hover:text-gray-300'}`}
-             title="Vertical Gradient"
-          >
-            <ArrowDown size={14} />
-          </button>
-        </div>
-      </div>
-
       {/* The Gradient Bar Area */}
       <div 
         className="relative h-12 w-full cursor-crosshair group"
@@ -139,36 +121,51 @@ const GradientEditor: React.FC<GradientEditorProps> = ({ stops, onChange, gradie
             <div className={`w-0.5 h-full mx-auto bg-white shadow-[0_0_2px_rgba(0,0,0,0.5)] ${selectedStopId === stop.id ? 'bg-blue-400' : ''}`} />
             
             {/* The clickable triangle/thumb at bottom */}
-            <div className={`absolute -bottom-3 left-1/2 -translate-x-1/2 w-4 h-4 rotate-45 border-2 shadow-sm ${selectedStopId === stop.id ? 'border-blue-400 bg-white scale-125' : 'border-white bg-gray-200'}`} />
+            <div className={`absolute -bottom-3 left-1/2 -translate-x-1/2 w-4 h-4 rotate-45 border-2 shadow-sm transition-transform ${selectedStopId === stop.id ? 'border-blue-400 bg-white scale-125 z-30' : 'border-white bg-gray-200 z-20'}`} />
           </div>
         ))}
       </div>
 
       {/* Controls for Selected Stop */}
       {selectedStop ? (
-        <div className="flex items-center gap-3 mt-2 bg-gray-700/50 p-2 rounded border border-gray-700">
-          <input
-            type="color"
-            value={selectedStop.color}
-            onChange={(e) => updateStopColor(selectedStop.id, e.target.value)}
-            className="w-8 h-8 rounded cursor-pointer border-none bg-transparent"
-          />
-          <div className="flex flex-col flex-1">
-            <label className="text-[10px] text-gray-400 mb-0.5">Offset: {(selectedStop.offset * 100).toFixed(0)}%</label>
-            <input
-              type="range"
-              min="0"
-              max="1"
-              step="0.01"
-              value={selectedStop.offset}
-              onChange={(e) => updateStopOffset(selectedStop.id, parseFloat(e.target.value))}
-              className="w-full h-1 bg-gray-600 rounded-lg appearance-none cursor-pointer"
-            />
+        <div className="flex items-center gap-3 mt-4 bg-gray-700/30 p-2 rounded-lg border border-gray-700/50 justify-between">
+          
+          {/* 1. Direction Toggle */}
+          <button 
+             onClick={toggleDirection}
+             className="w-8 h-8 rounded border border-gray-600 hover:border-white transition-all shadow-sm relative group overflow-hidden"
+             title={gradientType === 'linear-horizontal' ? 'Horizontal (Click to Vertical)' : 'Vertical (Click to Horizontal)'}
+          >
+             <div 
+               className="absolute inset-0" 
+               style={{ 
+                 background: gradientType === 'linear-horizontal' 
+                   ? getGradientCss().replace('linear-gradient(to right,', 'linear-gradient(to right,') // Keep as is
+                   : getGradientCss().replace('linear-gradient(to right,', 'linear-gradient(to bottom,') // Change direction
+               }} 
+             />
+             {/* Hover overlay hint */}
+             <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors" />
+          </button>
+
+          {/* 2. Color Picker */}
+          <div className="flex items-center gap-2">
+            <div className="relative w-8 h-8 rounded-full overflow-hidden border border-gray-500 shadow-inner group cursor-pointer">
+               <input
+                type="color"
+                value={selectedStop.color}
+                onChange={(e) => updateStopColor(selectedStop.id, e.target.value)}
+                className="absolute inset-0 w-[150%] h-[150%] -top-[25%] -left-[25%] cursor-pointer p-0 border-0"
+              />
+            </div>
+            <span className="text-xs font-mono text-gray-400 uppercase">{selectedStop.color}</span>
           </div>
+          
+          {/* 3. Delete Button */}
           <button
             onClick={() => deleteStop(selectedStop.id)}
             disabled={stops.length <= 1}
-            className="p-1.5 text-red-400 hover:bg-gray-600 rounded disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+            className="p-1.5 text-red-400 hover:bg-red-500/10 hover:text-red-300 rounded disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
             title="Remove Stop"
           >
             <Trash2 size={16} />
