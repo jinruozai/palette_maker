@@ -4,6 +4,9 @@
 
 # Run and deploy your AI Studio app
 
+[🚀 **Live Demo**](https://jinruozai.github.io/palette_maker/)
+
+
 This contains everything you need to run your app locally.
 
 View your app in AI Studio: https://ai.studio/apps/drive/1j8ZLXMArPUyRsOHBRI7JtcNXvpVDQ8u7
