@@ -1,0 +1,5 @@
+{
+  "name": "PaletteMaker",
+  "description": "A professional tool for creating color palette textures for low-poly 3D models with gradient support and batch operations.",
+  "requestFramePermissions": []
+}
